@@ -1,0 +1,24 @@
+{
+  "defaultProfile": "dev",
+  "profiles": {
+    "dev": {
+      "host": "192.168.1.10",
+      "port": 22,
+      "user": "jack",
+      "workdir": "/home/jack/app",
+      "identityFile": "C:\\Users\\jack\\.ssh\\id_ed25519",
+      "connectTimeout": 10,
+      "serverAliveInterval": 30,
+      "strictHostKeyChecking": "accept-new",
+      "remoteShell": "bash -s"
+    },
+    "prod-password": {
+      "host": "10.0.0.5",
+      "port": 2222,
+      "user": "deploy",
+      "workdir": "/srv/app",
+      "passwordEnv": "SSH_REMOTE_PASSWORD_PROD",
+      "hostKey": "SHA256:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    }
+  }
+}

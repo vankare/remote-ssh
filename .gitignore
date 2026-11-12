@@ -1,0 +1,29 @@
+# 本地连接档案（可能包含主机、用户与凭据信息，绝不能提交）
+servers.json
+**/servers.json
+.config/
+*.config.local.json
+
+# 临时文件与测试产物
+*.tmp
+*.temp
+*.bak
+*.log
+download.bin
+upload.bin
+*.local
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 编辑器与系统文件
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
